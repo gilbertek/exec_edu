@@ -20,7 +20,5 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
                                          email: "user@example.com",
                                          password:              "password" } }
     end
-    # follow_redirect!
-    # assert_template 'users/show'
   end
 end
