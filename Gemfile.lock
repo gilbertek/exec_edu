@@ -103,7 +103,6 @@ GEM
     nokogiri (1.6.8)
       mini_portile2 (~> 2.1.0)
       pkg-config (~> 1.1.7)
-    normalize-rails (4.1.1)
     pkg-config (1.1.7)
     poltergeist (1.10.0)
       capybara (~> 2.1)
@@ -196,7 +195,6 @@ DEPENDENCIES
   jquery-rails
   listen (~> 3.0.5)
   minitest-reporters (= 1.1.9)
-  normalize-rails
   poltergeist
   puma (~> 3.0)
   rails (~> 5.0.0)
