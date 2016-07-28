@@ -37,7 +37,8 @@ group :development do
 end
 
 group :test do
-  gem 'shoulda-matchers', '~> 3.1'
+  gem 'shoulda-matchers',         '~> 3.1'
+  gem 'minitest-reporters',       '1.1.9'
   gem 'capybara'
   gem 'poltergeist'
 end
