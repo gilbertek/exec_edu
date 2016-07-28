@@ -12,5 +12,9 @@
  *
  */
 @charset 'utf-8';
-@import 'normalize-rails';
 @import 'bootstrap';
+
+body {
+  min-height: 2000px;
+  padding-top: 70px;
+}
