@@ -40,6 +40,11 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.4.0)
     arel (7.1.0)
+    autoprefixer-rails (6.3.7)
+      execjs
+    bootstrap (4.0.0.alpha3)
+      autoprefixer-rails (>= 6.0.3)
+      sass (>= 3.4.19)
     builder (3.2.2)
     byebug (9.0.5)
     capybara (2.7.1)
@@ -92,6 +97,7 @@ GEM
     nokogiri (1.6.8)
       mini_portile2 (~> 2.1.0)
       pkg-config (~> 1.1.7)
+    normalize-rails (4.1.1)
     pkg-config (1.1.7)
     poltergeist (1.10.0)
       capybara (~> 2.1)
@@ -174,6 +180,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap (~> 4.0.0.alpha3)
   byebug
   capybara
   coffee-rails (~> 4.2)
@@ -181,6 +188,7 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
+  normalize-rails
   poltergeist
   puma (~> 3.0)
   rails (~> 5.0.0)
