@@ -11,6 +11,12 @@ class ActiveSupport::TestCase
   # Add more helper methods to be used by all tests here...
 end
 
+module SessionsHelper
+  def sign_in_as(user)
+    post login_path(email: user.email, password: user.password)
+  end
+end
+
 class ActionDispatch::IntegrationTest
   include SessionsHelper
 end
