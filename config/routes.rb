@@ -7,7 +7,9 @@ Rails.application.routes.draw do
   get     'welcome/index'
   root    'welcome#index'
 
-  resources :users, only: %w(create new)
+  resources :users, only: %w(create new) do
+    get 'courses/index'
+  end
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
