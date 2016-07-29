@@ -6,10 +6,11 @@ class UserApi
     def authenticate(params:)
       headers = build_auth_headers(params)
       response = request(body: {}, headers: headers)
+
       if response.success?
         response.parsed_response["token"]
       else
-        fail ExecOnlineApiError::ApiCallFailedError
+        fail ExecOnlineApiError::ApiAuthenticationError
       end
     end
 
