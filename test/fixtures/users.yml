@@ -4,7 +4,6 @@ one:
   email: <%= Faker::Internet.email %>
   first_name: <%= Faker::Name.first_name %>
   last_name: <%= Faker::Name.last_name %>
-  # password: <%= Faker::Internet.password %>
   auth_token: <%= Faker::Crypto.md5 %>
   avatar_url: <%= Faker::Avatar.image %>
   sf_contact_uid: <%= SecureRandom.uuid %>
@@ -13,7 +12,6 @@ two:
   email: <%= Faker::Internet.email %>
   first_name: <%= Faker::Name.first_name %>
   last_name: <%= Faker::Name.last_name %>
-  # password: <%= Faker::Internet.password %>
   auth_token: <%= Faker::Crypto.md5 %>
   avatar_url: <%= Faker::Avatar.image %>
   sf_contact_uid: <%= SecureRandom.uuid %>

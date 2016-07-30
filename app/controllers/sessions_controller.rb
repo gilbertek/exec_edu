@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
       log_in command.user
       redirect_to user_courses_index_path(command.user)
     else
-      flash[:danger] = 'Invalid email/password combination'
+      flash[:danger] = 'Invalid email/password combination.'
       render 'new'
     end
   end
