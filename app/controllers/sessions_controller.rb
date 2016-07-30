@@ -4,8 +4,6 @@ class SessionsController < ApplicationController
 
   def create
     command = UserAuthenticator.call(session_params[:email], session_params[:password])
-
-    byebug
     if command.success?
       log_in command.user
       redirect_to user_courses_index_path(command.user)

@@ -23,7 +23,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Fri, 29 Jul 2016 20:22:33 GMT
+      - Sat, 30 Jul 2016 01:03:24 GMT
       Server:
       - nginx/1.4.6 (Ubuntu)
       Status:
@@ -31,9 +31,9 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=31536000
       X-Request-Id:
-      - e2405fa2-ecde-4c84-8a32-d9db2ea1ee61
+      - 7b386467-5a29-4687-9101-19023fd3e5e2
       X-Runtime:
-      - '0.012341'
+      - '0.008877'
       Content-Length:
       - '33'
       Connection:
@@ -42,5 +42,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"error":"401 Unauthorized user"}'
     http_version: 
-  recorded_at: Fri, 29 Jul 2016 20:22:33 GMT
+  recorded_at: Sat, 30 Jul 2016 01:03:24 GMT
 recorded_with: VCR 3.0.3

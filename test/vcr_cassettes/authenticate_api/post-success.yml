@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://platform.staging.execonline.com/api/v1/tokens.json
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      X-Partner-Token:
+      - IPDsaiKQ8kacqLtKc1DrmA
+      X-User-Email:
+      - gilberts55@hotmail.com
+      X-User-Password:
+      - test12345
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 30 Jul 2016 01:01:10 GMT
+      Etag:
+      - W/"019c55418f938fb075cea3b493751c86"
+      Server:
+      - nginx/1.4.6 (Ubuntu)
+      Status:
+      - 201 Created
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Request-Id:
+      - 93f76fe6-efda-4b61-a1c6-e078149b98de
+      X-Runtime:
+      - '0.091941'
+      Content-Length:
+      - '34'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"token":"GxTBDFgK_lRI6_onz76CYw"}'
+    http_version: 
+  recorded_at: Sat, 30 Jul 2016 01:01:10 GMT
+recorded_with: VCR 3.0.3
