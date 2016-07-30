@@ -23,7 +23,11 @@ end
 
 module SessionsHelper
   def sign_in_as(user)
-    post login_path(email: user.email, password: user.password)
+    post login_path(session: { email: user.email, password: user.password })
+  end
+
+  def sign_in_via_api(email:, password:)
+    post login_path(session: { email: email, password: password })
   end
 end
 

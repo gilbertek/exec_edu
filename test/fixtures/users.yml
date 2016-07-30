@@ -15,3 +15,4 @@ two:
   auth_token: <%= Faker::Crypto.md5 %>
   avatar_url: <%= Faker::Avatar.image %>
   sf_contact_uid: <%= SecureRandom.uuid %>
+
