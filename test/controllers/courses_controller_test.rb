@@ -9,7 +9,9 @@ class CoursesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get index" do
-    get user_courses_index_path(@user)
-    assert_response :success
+    VCR.use_cassette('courses_api/get-success') do
+      get user_courses_index_path(@user)
+      assert_response :success
+    end
   end
 end
