@@ -12,12 +12,16 @@
     <div class="panel panel-default">
       <div class="panel-heading"><%= value["title"] %></div>
       <div class="panel-body">
-        <% value["segments"].each do |segment| %>
-          <div>
-            <%= segment["label"] %>
-            <%= segment["name"] %>
-          </div>
-        <% end %>
+        <div class="row">
+          <% value["segments"].each do |segment| %>
+            <div class="col-xs-6 col-md-3">
+              <div class="thumbnail">
+                <%= segment["label"] %>
+                <%= segment["name"] %>
+              </div>
+            </div>
+          <% end %>
+        </div>
       </div>
     </div>
   <% end %>
