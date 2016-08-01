@@ -1,2 +1,16 @@
-<h1>Courses#index</h1>
-<p>Find me in app/views/courses/index.html.erb</p>
+<% provide(:title, @current_course.title) %>
+
+<h1><%= @current_course.title %></h1>
+<p><%= @current_course.start_on %></p>
+
+<h3>Course Modules</h3>
+
+<ul class="list-unstyled">
+  <% @current_course.course_modules.each do |value| %>
+    <div class="module_row">
+      <h3> <%=  value["title"] %> </h3>
+    </div>
+  <% end %>
+</ul>
+
+
