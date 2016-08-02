@@ -1,7 +1,7 @@
 require 'ostruct'
 
 class CoursesController < ApplicationController
-  before_action :authorize
+  before_action :authorize, :valid_token?
 
   def index
     @courses = CourseApi.by_user({ token: current_user.auth_token })
@@ -13,5 +13,12 @@ class CoursesController < ApplicationController
 
     course = CourseApi.by_id({ id: @courses.first.fetch('id'), token: current_user.auth_token })
     @current_course = OpenStruct.new(course)
+  end
+
+  def valid_token?
+    unless params[:token].present?
+      flash[:danger] = 'Invalid token. Your executive online account token is not set.'
+      redirect_to root_path
+    end
   end
 end
