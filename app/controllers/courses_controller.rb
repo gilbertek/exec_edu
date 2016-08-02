@@ -16,7 +16,7 @@ class CoursesController < ApplicationController
   end
 
   def valid_token?
-    unless params[:token].present?
+    unless current_user.auth_token.present?
       flash[:danger] = 'Invalid token. Your executive online account token is not set.'
       redirect_to root_path
     end
