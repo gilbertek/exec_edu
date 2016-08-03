@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://platform.staging.execonline.com/api/v1/user/courses.json
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      X-Partner-Token:
+      - IPDsaiKQ8kacqLtKc1DrmA
+      X-User-Token:
+      - GxTBDFgK_lRI6_onz76CYw
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 03 Aug 2016 17:26:05 GMT
+      Etag:
+      - W/"a9ac473850c0ac081f697fc1c00e753a"
+      Server:
+      - nginx/1.4.6 (Ubuntu)
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Request-Id:
+      - 59a0493c-06ba-4624-a827-5960a137967b
+      X-Runtime:
+      - '0.018226'
+      Content-Length:
+      - '107'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '[{"id":68,"progress":0.0,"current_segment":1225,"current_module":62,"sf_student_uid":"a0F8A000000Gpf2UAC"}]'
+    http_version: 
+  recorded_at: Wed, 03 Aug 2016 17:26:04 GMT
+recorded_with: VCR 3.0.3
