@@ -2,6 +2,10 @@ require 'test_helper'
 
 class UserApiTest < ActiveSupport::TestCase
 
+  def setup
+    @user_token = ''
+  end
+
   test "#authenticate user" do
     VCR.use_cassette('authenticate_api/post-success') do
       @user_token = UserApi.authenticate(params: {email: 'gilberts55@hotmail.com', password: 'test12345'})
@@ -19,7 +23,7 @@ class UserApiTest < ActiveSupport::TestCase
 
   test "#identify user" do
     VCR.use_cassette('identity_api/get-success') do
-      @user = UserApi.identify(params: { token: 'fvgAUzxp4cmAzrLoCnOBCw' })
+      @user = UserApi.identify(params: { token: @user_token })
     end
     assert_not @user["first_name"].nil?
     assert_not @user["last_name"].nil?
