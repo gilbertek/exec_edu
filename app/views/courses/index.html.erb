@@ -1,7 +1,7 @@
-<% provide(:title, @current_course.title) %>
+<% provide(:title, course_title(@current_course)) %>
 
 <div class="page-header">
-  <h1><%= @current_course.title %>
+  <h1><%= course_title(@current_course) %>
   <small><%= @current_course.start_on %></small></h1>
 </div>
 

@@ -15,6 +15,8 @@ class CoursesController < ApplicationController
     @current_course = OpenStruct.new(course)
   end
 
+  private
+
   def valid_token?
     unless current_user.auth_token.present?
       flash[:danger] = 'Invalid token. Your executive online account token is not set.'

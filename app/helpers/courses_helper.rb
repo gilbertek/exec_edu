@@ -1,4 +1,5 @@
 module CoursesHelper
-  def title
+  def course_title(obj)
+    obj.title
   end
 end
