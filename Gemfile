@@ -40,7 +40,7 @@ end
 group :test do
   gem 'shoulda-matchers',         '~> 3.1'
   gem 'minitest-reporters',       '1.1.9'
-  gem 'capybara'
+  gem 'minitest-capybara'
   gem 'poltergeist'
   gem 'vcr'
   gem 'webmock'

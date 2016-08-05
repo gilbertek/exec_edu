@@ -99,6 +99,10 @@ GEM
     mime-types-data (3.2016.0521)
     mini_portile2 (2.1.0)
     minitest (5.9.0)
+    minitest-capybara (0.8.2)
+      capybara (~> 2.2)
+      minitest (~> 5.0)
+      rake
     minitest-reporters (1.1.9)
       ansi
       builder
@@ -203,13 +207,13 @@ DEPENDENCIES
   bcrypt (~> 3.1.7)
   bootstrap-sass
   byebug
-  capybara
   coffee-rails (~> 4.2)
   faker
   httparty
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
+  minitest-capybara
   minitest-reporters (= 1.1.9)
   poltergeist
   puma (~> 3.0)

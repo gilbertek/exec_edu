@@ -4,6 +4,7 @@ require 'rails/test_help'
 require 'minitest/reporters'
 require 'vcr'
 require 'webmock/minitest'
+require 'capybara/rails'
 
 Minitest::Reporters.use!
 WebMock.disable_net_connect!(allow_localhost: true)
@@ -33,4 +34,6 @@ end
 
 class ActionDispatch::IntegrationTest
   include SessionsHelper
+  include Capybara::DSL
+  include Capybara::Assertions
 end
