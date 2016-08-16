@@ -21,3 +21,6 @@
 .byebug_history
 vendor/bundle
 vendor/cache
+
+# Ignore application configuration
+/config/application.yml

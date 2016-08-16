@@ -13,6 +13,7 @@ gem 'jbuilder',             '~> 2.5'
 gem 'bootstrap-sass'
 gem 'httparty'
 gem 'simple_command'
+gem 'figaro'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis',              '~> 3.0'
